@@ -1,0 +1,188 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* 他の要素よりも上に表示するためにz-indexを設定 */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+ 
+  header h1 {
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  nav li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  nav a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  nav a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  nav a.active:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  
+  section {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+  }
+  
+  
+  /* Home section styles */
+  #home {
+    background-color: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #home h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* About section styles */
+  #about {
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+    /* Works section styles */
+    #works {
+        background-color: #efefef;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #works h2 {
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      #works p {
+        font-size: 24px;
+        text-align: center;
+      }
+  
+  /* Contact section styles */
+  #contact {
+    background-color: #e9e9e9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #contact h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #contact p {
+    font-size: 24px;
+    text-align: center;
+  }
+  
