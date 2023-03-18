@@ -12,12 +12,63 @@
     margin: 0;
   }
 
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+  @font-face {
+    font-family: 'JosefinSans-Bold';
+    src: url('fonts/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
   }
-  
+
+  header {
+    font-family: 'JosefinSans-Bold', sans-serif;
+  }
+
+  ont-face {
+    font-family: 'DotGothic16';
+    src: url('fonts/DotGothic16-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  main {
+    font-family: 'DotGothic16', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'GenShinGothic-Bold';
+    src: url('fonts/GenShinGothic-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  p {
+    font-family: 'GenShinGothic-Bold', sans-serif;
+  }
+
+  @font-face {
+    font-family: 'GenShinGothic-Heavy';
+    src: url('fonts/GenShinGothic-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  h2 {
+    font-family: 'GenShinGothic-Heavy', sans-serif;
+  }
+
+ .myname {
+  font-size: 100px;
+ }
+ .shuoh-yama-image {
+  max-width: 50%;
+  height: auto;
+}
+
+iframe {
+  max-width: 140%;
+  max-height: 140%;
+}
+
   .container {
     max-width: 960px;
     margin: 0 auto;
@@ -116,6 +167,7 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
+    font-family: 'DotGothic16', sans-serif;
   }
   
   #home p {
@@ -144,26 +196,31 @@
     text-align: center;
   }
 
-    /* Works section styles */
-    #works {
-        background-color: #efefef;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+/* Works section styles */
+  #works {
+    background-color: #efefef;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
       
-      #works h2 {
-        font-size: 48px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px;
-      }
+  #works h2 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
       
-      #works p {
-        font-size: 24px;
-        text-align: center;
-      }
+  #works p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .modal-video iframe {
+    width: 100%;
+    height: 70vh; /* 画面の高さの70%に設定 */
+  }
   
   /* Contact section styles */
   #contact {
@@ -185,4 +242,3 @@
     font-size: 24px;
     text-align: center;
   }
-  
