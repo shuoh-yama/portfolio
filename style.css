@@ -312,7 +312,45 @@ iframe {
     box-sizing: border-box;
     font-size: 62.5%;/*rem算出をしやすくするために*/
   }
-  
+
+.slider_fade > li {
+    position: absolute;
+    right: 1000px;
+    list-style: none;
+    visibility: hidden;
+    animation: anime_slider_fade 12s 0s infinite;
+}
+
+.slide_fade li {
+  margin : right
+}
+
+.slider_fade > li:nth-of-type(2) {
+    animation-delay: 4s;
+}
+.slider_fade > li:nth-of-type(3) {
+    animation-delay: 8s;
+}
+
+@keyframes anime_slider_fade {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    33.3% {
+        opacity: 1;
+    }
+    48.3% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
   .btn,
   a.btn,
   button.btn {
